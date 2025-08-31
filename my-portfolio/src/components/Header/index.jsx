@@ -1,4 +1,4 @@
-import { HeaderContainer, NavButtons } from './styles';
+import { HeaderContainer, NavButtons, Logo } from './styles';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Outlet } from 'react-router-dom';
 import { PortifolioContext } from '../../context/PortifolioContext';
@@ -11,7 +11,9 @@ const Header = () => {
                 <HeaderContainer>
                     <div>
                         <NavLink to="/">
-                            <img src="logo.svg" alt="logo" />
+                            <Logo /* TODO: change the logo*/>
+                                <img src="me.jpg" alt="logo" /> 
+                            </Logo>
                         </NavLink>
                         <div>
                             <NavButtons>

@@ -1,8 +1,7 @@
 export const defaultTheme = {
-    //product
+
     yellow: '#DBAC2C',
     'yellow-light': '#F1E9C9',
-    gray: '#666666',
     purple: '#8047F8',
     'purple-light': '#EBE5F9',
     'purple-dark': '#4B2995',
@@ -18,4 +17,8 @@ export const defaultTheme = {
     'base-card': '#F3F2F2',
     background: '#FAFAFA',
     white: '#FFFFFF',
+
+    //using
+    gray: '#666666',
+    text: '#42446E'
 };

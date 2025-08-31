@@ -31,3 +31,12 @@ export const NavButtons = styled.div`
         }
     }
 `;
+
+export const Logo = styled.div`
+    img {
+        border-radius: 100%;
+        height: 2rem;
+        border-color: ${(props) => props.theme['text']};
+        border: 2px solid ${(props) => props.theme['text']};
+    }
+`;
