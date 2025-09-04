@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const WorkExperienceContainer = styled.div`
     /* margin-right: 35%; */
+    margin-right: 3rem;
 
 `;
 
@@ -24,6 +25,21 @@ export const Header = styled.div`
 `;
 
 export const Body = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+     ul {
+        list-style: none;   // remove dots
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+`;
+
+export const Footer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -48,3 +48,8 @@ export const WorkExperience = styled.div`
     }
 `;
 
+export const EducationTitle = styled.h1`
+    margin-left: 5rem;
+`;
+
+

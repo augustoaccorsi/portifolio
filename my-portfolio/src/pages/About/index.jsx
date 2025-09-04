@@ -1,4 +1,4 @@
-import { AboutMe, HeaderContainer, WorkExperience, Experience } from './styles';
+import { AboutMe, HeaderContainer, WorkExperience, Experience, EducationTitle } from './styles';
 import WorkExperienceItem from '../../components/WorkExperience/index';
 import Education from '../../components/Education/index'
 
@@ -27,7 +27,7 @@ const About = () => {
                 }
             </WorkExperience>
             <WorkExperience>
-                <h1>Education</h1>
+                <EducationTitle>Education</EducationTitle>
                 {
                     school.education.map((education, key) => {
                         return <Education key={key} education={education} />

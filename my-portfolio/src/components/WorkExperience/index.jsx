@@ -1,4 +1,4 @@
-import { WorkExperienceContainer, Header, Body, Divider } from './styles';
+import { WorkExperienceContainer, Header, Body, Footer, Divider } from './styles';
 import { FaBuilding, FaCalendarAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 
@@ -11,6 +11,12 @@ const WorkExperienceItem = ({work}) => {
             </Header>
 
             <Body>
+                <ul>
+                    {work.responsibilities.map((responsability, key) => <li key={key}>{responsability}</li>)}
+                </ul>
+            </Body>
+
+            <Footer>
                 <div>
                     <div>
                         <FaBuilding />
@@ -25,7 +31,7 @@ const WorkExperienceItem = ({work}) => {
                     <FaCalendarAlt />
                     <p>{work.start_date} - {work.end_date}</p>
                 </div>
-            </Body>
+            </Footer>
             <Divider />
         </WorkExperienceContainer>
     );
