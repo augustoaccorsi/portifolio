@@ -1,0 +1,21 @@
+{
+  "education": [
+    {
+      "institution": "Universidade do Vale do Rio dos Sinos",
+      "degree": "Bachelor's degree",
+      "field": "Computer Science",
+      "focus": "Elasticity in Cloud Computing",
+      "start_date": "2015",
+      "end_date": "2021",
+      "location": "São Leopoldo/RS - Brazil"
+    },
+    {
+      "institution": "Fundação Escola Técnica Liberato Salzano Vieira da Cunha",
+      "degree": "Technician",
+      "field": "Electronics",
+      "start_date": "2010",
+      "end_date": "2015",
+      "location": "Novo Hamburgo/RS - Brazil"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "experience": [
+    {
+      "company": "SAP Labs Latin America",
+      "title": "Senior Software Developer",
+      "start_date": "January 2025",
+      "end_date": "Present",
+      "duration": "9 months",
+      "location": "São Leopoldo/RS - Brazil",
+      "contract": "Full Time",
+      "responsibilities": [
+        "Delivered the first release of CatMan SAP Ariba Launchpad, used globally to streamline procurement category management.",
+        "Driving delivery of new features with a focus on performance, usability, and enterprise scalability.",
+        "Collaborating with cross-functional teams (design, backend, DevOps) to ensure smooth deployments and business impact."
+      ]
+    },
+    {
+      "company": "SAP Labs Latin America",
+      "title": "Software Developer Specialist",
+      "start_date": "December 2021",
+      "end_date": "March 2025",
+      "duration": "3 years 4 months",
+      "location": "São Leopoldo/RS - Brazil",
+      "contract": "Full Time",
+      "responsibilities": [
+        "Full-stack developer in a brand-new SAP application called Category Manager (CatMan), built with SAPUI5 and Java (CAP).",
+        "Developed microservices and UI components using JavaScript, Node, Java, Spring, and CAP, ensuring scalability and maintainability.",
+        "Championed agile and DevOps practices to foster seamless teamwork and continuous delivery.",
+        "Supported implementation of Deploy with Confidence (DwC) platform, enabling production deployments with higher reliability."
+      ]
+    },
+    {
+      "company": "SAP Labs Latin America",
+      "title": "Developer",
+      "start_date": "March 2017",
+      "end_date": "December 2021",
+      "duration": "4 years 10 months",
+      "location": "São Leopoldo/RS - Brazil",
+      "contract": "Full Time",
+      "responsibilities": [
+        "Integration of Tax Service into S/4 HANA, localizing business scenarios to support taxes calculation.",
+        "Developed a feature to manage any kind of queue for a Chatbot @ Slack."
+      ]
+    },
+    {
+      "company": "SAP Labs Latin America",
+      "title": "Development Intern",
+      "start_date": "September 2015",
+      "end_date": "February 2017",
+      "duration": "1 year 6 months",
+      "location": "São Leopoldo/RS - Brazil",
+      "contract": "Intern",
+      "responsibilities": [
+        "Localization of SAP Banking Services.",
+        "Visual Harmonization, harmonizing the WebGui screens to make them user friendly.",
+        "Developed a Google Chrome extension for the Visual Harmonization project.",
+        "Frontend developer with SAPUI5 for Innoweeks Retail team solution.",
+        "Simulation UI project: SAPUI5 for Integration of Tax Service into S/4 HANA."
+      ]
+    },
+    {
+      "company": "e-mine",
+      "title": "Development Intern",
+      "start_date": "February 2015",
+      "end_date": "September 2015",
+      "duration": "8 months",
+      "location": "São Leopoldo/RS - Brazil",
+      "contract": "Intern",
+      "responsibilities": [
+        "Worked on Arezzo's website.",
+        "Developed applications for Windows and Windows Phone OS.",
+        "Worked with Virtual Machines."
+      ]
+    },
+    {
+      "company": "e-mine",
+      "title": "Development Intern",
+      "start_date": "September 2013",
+      "end_date": "April 2014",
+      "duration": "8 months",
+      "location": "São Leopoldo/RS - Brazil",
+      "contract": "Intern",
+      "responsibilities": [
+        "Developed a project using Google Maps technology to tag robbery locations.",
+        "Maintained and developed the company's portal."
+      ]
+    },
+    {
+      "company": "Metalúrgica Imac",
+      "title": "Maintenance Assistant",
+      "start_date": "January 2013",
+      "end_date": "January 2013",
+      "duration": "1 month",
+      "location": "Sapucaia do Sul/RS - Brazil",
+      "contract": "Part time",
+      "responsibilities": [
+        "Mechanical lathe maintenance assistant."
+      ]
+    }
+  ]
+}

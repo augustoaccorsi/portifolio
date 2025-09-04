@@ -12,12 +12,12 @@ const Header = () => {
                     <div>
                         <NavLink to="/">
                             <Logo /* TODO: change the logo*/>
-                                <img src="me.jpg" alt="logo" /> 
+                                <img src="logo2.png" alt="logo" /> 
                             </Logo>
                         </NavLink>
                         <div>
                             <NavButtons>
-                                <NavLink to="/home">
+                                <NavLink to="/">
                                     <a>
                                         Home
                                     </a>

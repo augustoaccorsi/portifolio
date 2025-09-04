@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
     margin-top: 2rem;
+    margin-bottom: 3rem;;
 
     div {
         display: flex;
