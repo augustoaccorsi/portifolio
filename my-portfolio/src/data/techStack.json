@@ -1,0 +1,48 @@
+{
+  "tech_stack": [
+    {
+      "name": "React",
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+    },
+    {
+      "name": "TypeScript",
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+    },
+    {
+      "name": "JavaScript",
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "SAPUI5",
+      "logo": "https://openui5.org/5bdd288371ed8100415f04563acc8dfe/phenix_blue.svg"
+    },
+    {
+      "name": "Node.js",
+      "logo": "https://nodejs.org/static/logos/jsIconGreen.svg"
+    },
+    {
+      "name": "Java",
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+    },
+    {
+      "name": "Spring",
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"
+    },
+    {
+      "name": "CAP (SAP Cloud Application Programming Model)",
+      "logo": "https://cap.cloud.sap/docs/cap-logo.svg"
+    },
+    {
+      "name": "Jest",
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg"
+    },
+    {
+      "name": "QUnit",
+      "logo": "https://avatars.githubusercontent.com/u/23195278?s=200&v=4"
+    },
+    {
+      "name": "GitHub Actions",
+      "logo": "https://icon.icepanel.io/Technology/svg/GitHub-Actions.svg"
+    }
+  ]
+}
