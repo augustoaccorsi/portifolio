@@ -7,8 +7,14 @@ export const Image = styled.div`
     display: flex;
     flex-direction: column;
 
+    margin: 1rem;
+
     img {
-        height: 10rem;
+        height: 9rem;
         border-radius: 10%;
+    }
+
+    span {
+       text-align: center;
     }
 `;
