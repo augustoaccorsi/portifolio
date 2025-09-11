@@ -9,21 +9,16 @@ import {
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Outlet, useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext } from 'react';
 import ThemeToggle from '../ThemeToggle';
+import { PortifolioContext } from '../../context/PortifolioContext';
 
 const Header = () => {
     const location = useLocation();
-    const [isDark, setIsDark] = useState(false);
+    const { isDarkTheme, toggleTheme } = useContext(PortifolioContext);
 
     const isActiveRoute = (path) => {
         return location.pathname === path;
-    };
-
-    const handleThemeToggle = () => {
-        setIsDark(!isDark);
-        // Theme switching logic will be implemented later
-        console.log('Theme toggle clicked:', !isDark ? 'dark' : 'light');
     };
 
     return (
@@ -73,8 +68,7 @@ const Header = () => {
                                         <Link>Contact</Link>
                                     )}
                                 </NavLink>
-                                <ThemeToggle isDark={isDark} onToggle={handleThemeToggle} />
-                                {/* <NavLink
+                                <NavLink
                                     to="https://github.com/augustoaccorsi"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -92,7 +86,9 @@ const Header = () => {
                                         {' '}
                                         <FaLinkedin />
                                     </Icon>
-                                </NavLink> */}
+                                </NavLink>
+
+                                <ThemeToggle isDark={isDarkTheme} onToggle={toggleTheme} />
                             </NavButtons>
                         </div>
                     </div>

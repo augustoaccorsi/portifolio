@@ -1,5 +1,7 @@
 import React, { createContext, useEffect, useState, useMemo } from 'react';
 import { API } from '../lib/axios';
+import { defaultTheme } from '../styles/theme/default';
+import { darkTheme } from '../styles/theme/dark';
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const PortifolioContext = createContext({});
@@ -8,6 +10,16 @@ const PortifolioContextProvider = (props) => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    
+    const [isDarkTheme, setIsDarkTheme] = useState(() => {
+        const savedTheme = localStorage.getItem('theme');
+
+        if (!savedTheme) {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches === 'dark';
+        }
+        
+        return savedTheme === 'dark';
+    });
 
     const fetchProjects = async () => {
         try {
@@ -27,12 +39,23 @@ const PortifolioContextProvider = (props) => {
         fetchProjects();
     }, []);
 
+    const toggleTheme = () => {
+        const newTheme = !isDarkTheme;
+        setIsDarkTheme(newTheme);
+        localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+    };
+
+    const currentTheme = isDarkTheme ? darkTheme : defaultTheme;
+
     const contextValue = useMemo(() => ({
         projects,
         loading,
         error,
-        refetchProjects: fetchProjects
-    }), [projects, loading, error]);
+        refetchProjects: fetchProjects,
+        isDarkTheme,
+        toggleTheme,
+        currentTheme
+    }), [projects, loading, error, isDarkTheme, currentTheme]);
 
     return (
         <PortifolioContext.Provider value={contextValue}>

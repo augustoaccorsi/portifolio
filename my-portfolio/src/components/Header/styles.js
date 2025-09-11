@@ -54,7 +54,7 @@ export const Link = styled.a`
 `;
 
 export const SelectedLink = styled.a`
-    color: ${(props) => props.theme['text']};
+    color: ${(props) => props.theme['base-title']};
     &:hover {
         cursor: pointer;
         color: ${(props) => props.theme['button-hover']};
