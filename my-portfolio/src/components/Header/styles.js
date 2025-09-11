@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
     margin-top: 2rem;
-    margin-bottom: 3rem;;
+    margin-bottom: 3rem;
 
     div {
         display: flex;
@@ -20,7 +20,6 @@ export const NavButtons = styled.div`
         border: none;
         border-radius: 8px;
         text-decoration: none;
-        color: ${(props) => props.theme['gray']};
 
         display: flex;
         align-items: center;
@@ -39,5 +38,32 @@ export const Logo = styled.div`
         height: 2rem;
         border-color: ${(props) => props.theme['text']};
         border: 2px solid ${(props) => props.theme['text']};
+    }
+    &:hover {
+        cursor: pointer;
+        color: ${(props) => props.theme['button-hover']};
+    }
+`;
+
+export const Link = styled.a`
+    color: ${(props) => props.theme['gray']};
+    &:hover {
+        cursor: pointer;
+        color: ${(props) => props.theme['button-hover']};
+    }
+`;
+
+export const SelectedLink = styled.a`
+    color: ${(props) => props.theme['text']};
+    &:hover {
+        cursor: pointer;
+        color: ${(props) => props.theme['button-hover']};
+    }
+`;
+
+export const Icon = styled.div`
+    &:hover {
+        cursor: pointer;
+        color: ${(props) => props.theme['button-hover']};
     }
 `;

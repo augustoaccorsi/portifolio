@@ -19,6 +19,7 @@ export const defaultTheme = {
 
     'background-hover': '#e2d5d57b',
     white: '#FFFFFF',
+    'button-hover': '#0366d6',
 
     //using
     gray: '#666666',

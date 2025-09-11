@@ -1,10 +1,22 @@
-import { HeaderContainer, NavButtons, Logo } from './styles';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { Outlet } from 'react-router-dom';
-import { PortifolioContext } from '../../context/PortifolioContext';
+import {
+    HeaderContainer,
+    NavButtons,
+    Logo,
+    Link,
+    SelectedLink,
+    Icon,
+} from './styles';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Outlet, useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+    const location = useLocation();
+
+    const isActiveRoute = (path) => {
+        return location.pathname === path;
+    };
+
     return (
         <>
             <header>
@@ -12,47 +24,64 @@ const Header = () => {
                     <div>
                         <NavLink to="/">
                             <Logo /* TODO: change the logo*/>
-                                <img src="logo2.png" alt="logo" /> 
+                                <img src="logo.png" alt="Portfolio Logo" />
                             </Logo>
                         </NavLink>
                         <div>
                             <NavButtons>
                                 <NavLink to="/">
-                                    <a>
-                                        Home
-                                    </a>
+                                    {isActiveRoute('/') ? (
+                                        <SelectedLink>Home</SelectedLink>
+                                    ) : (
+                                        <Link>Home</Link>
+                                    )}
                                 </NavLink>
                                 <NavLink to="/about">
-                                    <a>
-                                        About
-                                    </a>
+                                    {isActiveRoute('/about') ? (
+                                        <SelectedLink>About</SelectedLink>
+                                    ) : (
+                                        <Link>About</Link>
+                                    )}
                                 </NavLink>
                                 <NavLink to="/techStack">
-                                    <a>
-                                        Tech Stack
-                                    </a>
+                                    {isActiveRoute('/techStack') ? (
+                                        <SelectedLink>Tech Stack</SelectedLink>
+                                    ) : (
+                                        <Link>Tech Stack</Link>
+                                    )}
                                 </NavLink>
                                 <NavLink to="/projects">
-                                    <a>
-                                        Projects
-                                    </a>
+                                    {isActiveRoute('/projects') ? (
+                                        <SelectedLink>Projects</SelectedLink>
+                                    ) : (
+                                        <Link>Projects</Link>
+                                    )}
                                 </NavLink>
                                 <NavLink to="/contact">
-                                    <a>
-                                        Contact
-                                    </a>
+                                    {isActiveRoute('/contact') ? (
+                                        <SelectedLink>Contact</SelectedLink>
+                                    ) : (
+                                        <Link>Contact</Link>
+                                    )}
                                 </NavLink>
                                 <NavLink
                                     to="https://github.com/augustoaccorsi"
                                     target="_blank"
-                                    rel="noopener noreferrer">
-                                    <FaGithub />
+                                    rel="noopener noreferrer"
+                                >
+                                    <Icon>
+                                        <FaGithub />
+                                    </Icon>
                                 </NavLink>
                                 <NavLink
                                     to="https://www.linkedin.com/in/augusto-accorsi/"
                                     target="_blank"
-                                    rel="noopener noreferrer">
-                                    <FaLinkedin />
+                                    rel="noopener noreferrer"
+                                >
+                                    <Icon>
+                                        {' '}
+                                        <FaLinkedin />
+                                    </Icon>
                                 </NavLink>
                             </NavButtons>
                         </div>
