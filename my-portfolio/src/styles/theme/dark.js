@@ -22,5 +22,6 @@ export const darkTheme = {
 
     //using
     gray: '#8D8D99',
-    text: '#E1E1E6'
+    text: '#E1E1E6',
+    logo: '#E1E1E6'
 };

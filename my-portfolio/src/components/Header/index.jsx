@@ -27,8 +27,22 @@ const Header = () => {
                 <HeaderContainer>
                     <div>
                         <NavLink to="/">
-                            <Logo /* TODO: change the logo*/>
-                                <img src="logo.png" alt="Portfolio Logo" />
+                            <Logo>
+                                {isDarkTheme ? (
+                                    <img
+                                        src="rex-logo-dark.svg"
+                                        alt="Portfolio Logo"
+                                        width="50"
+                                        height="50"
+                                    />
+                                ) : (
+                                    <img
+                                        src="rex-logo-light.svg"
+                                        alt="Portfolio Logo"
+                                        width="50"
+                                        height="50"
+                                    />
+                                )}
                             </Logo>
                         </NavLink>
                         <div>
@@ -88,7 +102,10 @@ const Header = () => {
                                     </Icon>
                                 </NavLink>
 
-                                <ThemeToggle isDark={isDarkTheme} onToggle={toggleTheme} />
+                                <ThemeToggle
+                                    isDark={isDarkTheme}
+                                    onToggle={toggleTheme}
+                                />
                             </NavButtons>
                         </div>
                     </div>

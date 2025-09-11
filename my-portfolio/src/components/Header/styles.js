@@ -34,14 +34,12 @@ export const NavButtons = styled.div`
 
 export const Logo = styled.div`
     img {
-        border-radius: 100%;
-        height: 2rem;
-        border-color: ${(props) => props.theme['text']};
-        border: 2px solid ${(props) => props.theme['text']};
+        transition: all 0.3s ease;
     }
     &:hover {
         cursor: pointer;
-        color: ${(props) => props.theme['button-hover']};
+        filter: brightness(0) saturate(100%) invert(40%) sepia(90%)
+            saturate(500%) hue-rotate(200deg);
     }
 `;
 
@@ -55,6 +53,8 @@ export const Link = styled.a`
 
 export const SelectedLink = styled.a`
     color: ${(props) => props.theme['base-title']};
+
+    transition: all 0.3s ease;
     &:hover {
         cursor: pointer;
         color: ${(props) => props.theme['button-hover']};
@@ -63,6 +63,8 @@ export const SelectedLink = styled.a`
 
 export const Icon = styled.div`
     color: ${(props) => props.theme['gray']};
+
+    transition: all 0.3s ease;
     &:hover {
         cursor: pointer;
         color: ${(props) => props.theme['button-hover']};
