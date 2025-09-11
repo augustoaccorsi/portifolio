@@ -12,12 +12,12 @@ const PortifolioContextProvider = (props) => {
     const [error, setError] = useState(null);
     
     const [isDarkTheme, setIsDarkTheme] = useState(() => {
-        const savedTheme = localStorage.getItem('theme');
+        const savedTheme = localStorage.getItem('aa-portifolio-theme');
 
         if (!savedTheme) {
             return window.matchMedia('(prefers-color-scheme: dark)').matches === 'dark';
         }
-        
+
         return savedTheme === 'dark';
     });
 
@@ -42,7 +42,7 @@ const PortifolioContextProvider = (props) => {
     const toggleTheme = () => {
         const newTheme = !isDarkTheme;
         setIsDarkTheme(newTheme);
-        localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+        localStorage.setItem('aa-portifolio-theme', newTheme ? 'dark' : 'light');
     };
 
     const currentTheme = isDarkTheme ? darkTheme : defaultTheme;
