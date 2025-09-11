@@ -62,6 +62,7 @@ export const SelectedLink = styled.a`
 `;
 
 export const Icon = styled.div`
+    color: ${(props) => props.theme['gray']};
     &:hover {
         cursor: pointer;
         color: ${(props) => props.theme['button-hover']};
