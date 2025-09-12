@@ -37,8 +37,11 @@ export const AboutMe = styled.div`
 
 export const Experience = styled.div`
     justify-content: space-between;
-    display: flex;
+    /* display: flex; */
     gap: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
 export const WorkExperience = styled.div`

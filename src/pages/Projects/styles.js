@@ -33,7 +33,6 @@ export const About = styled.div`
 
 export const ProjectsContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
-
 `;

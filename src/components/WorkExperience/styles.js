@@ -25,7 +25,8 @@ export const Header = styled.div`
 `;
 
 export const Body = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;

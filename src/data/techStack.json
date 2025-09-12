@@ -6,47 +6,47 @@
     },
     {
       "name": "TypeScript",
-      "logo": "typescript.svg"
+      "logo": " typescript.svg"
     },
     {
       "name": "JavaScript",
-      "logo": "javascript.svg"
+      "logo": " javascript.svg"
     },
     {
       "name": "SAPUI5",
-      "logo": "sapui5.svg"
+      "logo": " sapui5.svg"
     },
     {
       "name": "Node.js",
-      "logo": "node.svg"
+      "logo": " node.svg"
     },
     {
       "name": "Java",
-      "logo": "java.svg"
+      "logo": " java.svg"
     },
     {
       "name": "Spring",
-      "logo": "spring.svg"
+      "logo": " spring.svg"
     },
     {
       "name": "CAP (SAP Cloud Application Programming Model)",
-      "logo": "cap.svg"
+      "logo": " cap.svg"
     },
     {
       "name": "Jest",
-      "logo": "jest.svg"
+      "logo": " jest.svg"
     },
     {
       "name": "QUnit",
-      "logo": "qunit.png"
+      "logo": " qunit.png"
     },
     {
       "name": "GitHub Actions",
-      "logo": "actions.svg"
+      "logo": " actions.svg"
     },
     {
       "name": "GitHub",
-      "logo": "github.png"
+      "logo": " github.png"
     }
   ]
 }
