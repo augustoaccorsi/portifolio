@@ -1,4 +1,4 @@
-# 🚀 Augusto Accorsi - Portfolio (root)
+# 🚀 Augusto Accorsi - Portfolio
 
 A modern, responsive portfolio website built with React, showcasing my journey as a Senior Software Developer at SAP Labs Latin America.
 
@@ -38,7 +38,7 @@ A modern, responsive portfolio website built with React, showcasing my journey a
 ## 🏗️ Project Structure
 
 ```
-my-portfolio/
+portifolio/
 ├── public/
 │   ├── stack/              # Technology stack icons
 │   ├── me.jpg             # Profile image
@@ -60,6 +60,11 @@ my-portfolio/
 │   ├── data/              # JSON data files
 │   ├── context/           # React context providers
 │   └── utils/             # Utility functions
+├── .github/
+│   └── workflows/         # GitHub Actions workflows
+├── package.json           # Project dependencies and scripts
+├── vite.config.js         # Vite configuration
+└── README.md              # Project documentation
 ```
 
 ## 🚀 Getting Started
@@ -73,7 +78,7 @@ my-portfolio/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/augustoaccorsi/portifolio.git
-   cd portifolio/my-portfolio
+   cd portifolio
    ```
 
 2. **Install dependencies**

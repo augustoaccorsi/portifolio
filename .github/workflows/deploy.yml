@@ -19,21 +19,17 @@ jobs:
       with:
         node-version: '18'
         cache: 'npm'
-        cache-dependency-path: my-portfolio/package-lock.json
 
     - name: Install dependencies
-      run: |
-        cd my-portfolio
-        npm ci
+      run: npm ci
 
     - name: Build
-      run: |
-        cd my-portfolio
-        npm run build
+      run: npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: my-portfolio/dist
+        publish_dir: dist
+        cname: # Add your custom domain here if you have one
