@@ -2,51 +2,51 @@
   "tech_stack": [
     {
       "name": "React",
-      "logo": "./public/stack/react.svg"
+      "logo": "react.svg"
     },
     {
       "name": "TypeScript",
-      "logo": "./public/stack/typescript.svg"
+      "logo": "typescript.svg"
     },
     {
       "name": "JavaScript",
-      "logo": "./public/stack/javascript.svg"
+      "logo": "javascript.svg"
     },
     {
       "name": "SAPUI5",
-      "logo": "./public/stack/sapui5.svg"
+      "logo": "sapui5.svg"
     },
     {
       "name": "Node.js",
-      "logo": "./public/stack/node.svg"
+      "logo": "node.svg"
     },
     {
       "name": "Java",
-      "logo": "./public/stack/java.svg"
+      "logo": "java.svg"
     },
     {
       "name": "Spring",
-      "logo": "./public/stack/spring.svg"
+      "logo": "spring.svg"
     },
     {
       "name": "CAP (SAP Cloud Application Programming Model)",
-      "logo": "./public/stack/cap.svg"
+      "logo": "cap.svg"
     },
     {
       "name": "Jest",
-      "logo": "./public/stack/jest.svg"
+      "logo": "jest.svg"
     },
     {
       "name": "QUnit",
-      "logo": "./public/stack/qunit.png"
+      "logo": "qunit.png"
     },
     {
       "name": "GitHub Actions",
-      "logo": "./public/stack/actions.svg"
+      "logo": "actions.svg"
     },
     {
       "name": "GitHub",
-      "logo": "./public/stack/github.png"
+      "logo": "github.png"
     }
   ]
 }
