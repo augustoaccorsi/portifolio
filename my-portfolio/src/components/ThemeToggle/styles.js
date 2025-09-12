@@ -14,7 +14,7 @@ export const ToggleButton = styled.button`
     transition: color 0.2s ease;
 
     &:hover {
-        color: ${(props) => props.theme['button-hover']};
+        color: ${(props) => props.theme['purple']};
     }
 
     &:focus {

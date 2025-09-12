@@ -15,7 +15,7 @@ const PortifolioContextProvider = (props) => {
         const savedTheme = localStorage.getItem('aa-portifolio-theme');
 
         if (!savedTheme) {
-            return window.matchMedia('(prefers-color-scheme: dark)').matches === 'dark';
+            return true;
         }
 
         return savedTheme === 'dark';

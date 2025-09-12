@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const EducationContainer = styled.div`
     /* margin-right: 35%; */
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 
 `;
 

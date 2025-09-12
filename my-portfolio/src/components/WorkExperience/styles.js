@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const WorkExperienceContainer = styled.div`
     /* margin-right: 35%; */
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
 
 `;
 
@@ -31,10 +31,11 @@ export const Body = styled.div`
     margin-bottom: 1rem;
 
      ul {
-        list-style: none;   // remove dots
+        /* list-style: none;   // remove dots */
     }
 
     li {
+        margin-bottom: 0.3rem;
         font-size: 0.8rem;
     }
 `;
