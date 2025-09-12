@@ -1,4 +1,4 @@
-# 🚀 Augusto Accorsi - Portfolio
+# 🚀 Augusto Accorsi - Portfolio (root)
 
 A modern, responsive portfolio website built with React, showcasing my journey as a Senior Software Developer at SAP Labs Latin America.
 
