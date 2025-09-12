@@ -2,51 +2,51 @@
   "tech_stack": [
     {
       "name": "React",
-      "logo": "/stack/react.svg"
+      "logo": "./public/stack/react.svg"
     },
     {
       "name": "TypeScript",
-      "logo": "/stack/typescript.svg"
+      "logo": "./public/stack/typescript.svg"
     },
     {
       "name": "JavaScript",
-      "logo": "/stack/javascript.svg"
+      "logo": "./public/stack/javascript.svg"
     },
     {
       "name": "SAPUI5",
-      "logo": "/stack/sapui5.svg"
+      "logo": "./public/stack/sapui5.svg"
     },
     {
       "name": "Node.js",
-      "logo": "/stack/node.svg"
+      "logo": "./public/stack/node.svg"
     },
     {
       "name": "Java",
-      "logo": "/stack/java.svg"
+      "logo": "./public/stack/java.svg"
     },
     {
       "name": "Spring",
-      "logo": "/stack/spring.svg"
+      "logo": "./public/stack/spring.svg"
     },
     {
       "name": "CAP (SAP Cloud Application Programming Model)",
-      "logo": "/stack/cap.svg"
+      "logo": "./public/stack/cap.svg"
     },
     {
       "name": "Jest",
-      "logo": "/stack/jest.svg"
+      "logo": "./public/stack/jest.svg"
     },
     {
       "name": "QUnit",
-      "logo": "/stack/qunit.png"
+      "logo": "./public/stack/qunit.png"
     },
     {
       "name": "GitHub Actions",
-      "logo": "/stack/actions.svg"
+      "logo": "./public/stack/actions.svg"
     },
     {
       "name": "GitHub",
-      "logo": "/stack/github.png"
+      "logo": "./public/stack/github.png"
     }
   ]
 }

@@ -26,7 +26,7 @@ const Header = () => {
             <header>
                 <HeaderContainer>
                     <div>
-                        <NavLink to="/">
+                        <NavLink to="/portifolio/">
                             <Logo>
                                 {isDarkTheme ? (
                                     <img
@@ -47,36 +47,36 @@ const Header = () => {
                         </NavLink>
                         <div>
                             <NavButtons>
-                                <NavLink to="/">
-                                    {isActiveRoute('/') ? (
+                                <NavLink to="/portifolio/">
+                                    {isActiveRoute('/portifolio/') ? (
                                         <SelectedLink>Home</SelectedLink>
                                     ) : (
                                         <Link>Home</Link>
                                     )}
                                 </NavLink>
-                                <NavLink to="/about">
-                                    {isActiveRoute('/about') ? (
+                                <NavLink to="/portifolio/about">
+                                    {isActiveRoute('/portifolio/about') ? (
                                         <SelectedLink>About</SelectedLink>
                                     ) : (
                                         <Link>About</Link>
                                     )}
                                 </NavLink>
-                                <NavLink to="/techStack">
-                                    {isActiveRoute('/techStack') ? (
+                                <NavLink to="/portifolio/techStack">
+                                    {isActiveRoute('/portifolio/techStack') ? (
                                         <SelectedLink>Tech Stack</SelectedLink>
                                     ) : (
                                         <Link>Tech Stack</Link>
                                     )}
                                 </NavLink>
-                                <NavLink to="/projects">
-                                    {isActiveRoute('/projects') ? (
+                                <NavLink to="/portifolio/projects">
+                                    {isActiveRoute('/portifolio/projects') ? (
                                         <SelectedLink>Projects</SelectedLink>
                                     ) : (
                                         <Link>Projects</Link>
                                     )}
                                 </NavLink>
-                                <NavLink to="/contact">
-                                    {isActiveRoute('/contact') ? (
+                                <NavLink to="/portifolio/contact">
+                                    {isActiveRoute('/portifolio/contact') ? (
                                         <SelectedLink>Contact</SelectedLink>
                                     ) : (
                                         <Link>Contact</Link>

@@ -10,12 +10,12 @@ import Contact from '../pages/Contact/index';
 const Router = () => {
     return (
         <Routes>
-            <Route path="/" element={<Header />}>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/techStack" element={<TechStack />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
+            <Route path="/portifolio/" element={<Header />}>
+                <Route path="/portifolio/" element={<Home />} />
+                <Route path="/portifolio/about" element={<About />} />
+                <Route path="/portifolio/techStack" element={<TechStack />} />
+                <Route path="/portifolio/projects" element={<Projects />} />
+                <Route path="/portifolio/contact" element={<Contact />} />
             </Route>
         </Routes>
     );
