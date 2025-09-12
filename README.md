@@ -1,6 +1,6 @@
 # 🚀 Augusto Accorsi - Portfolio
 
-A modern, responsive portfolio website built with React, showcasing my journey as a Senior Software Developer at SAP Labs Latin America.
+This is my portfolio
 
 ![Portfolio Preview](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.4.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
