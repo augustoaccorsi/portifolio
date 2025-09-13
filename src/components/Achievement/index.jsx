@@ -16,12 +16,12 @@ const Achievement = ({ achievement }) => {
                 <div>
                     <div>
                         <FaBuilding />
-                        <p>{achievement.periodic}</p>
+                        <p>{achievement.periodic} ({achievement.year})</p>
                     </div>
-                        <FaCalendarAlt />
+                        {/* <FaCalendarAlt />
                         <p>
                             {achievement.year}
-                        </p>
+                        </p> */}
                     <div>
                         <FaFileDownload />
                         <p>

@@ -1,49 +1,69 @@
-import { AboutMe, HeaderContainer, WorkExperience, Experience, EducationTitle, AchievementTitle } from './styles';
+import {
+    AboutMe,
+    HeaderContainer,
+    WorkExperience,
+    Experience,
+    EducationTitle,
+    AchievementTitle,
+} from './styles';
 import WorkExperienceItem from '../../components/WorkExperience/index';
 import Education from '../../components/Education/index';
 import Achievement from '../../components/Achievement/index';
 
-import jobs from '../../data/workExperience.json'
-import school from '../../data/education.json'
-import achievements from '../../data/achievements.json'
+import jobs from '../../data/workExperience.json';
+import school from '../../data/education.json';
+import achievements from '../../data/achievements.json';
 
 const About = () => {
     return (
         <HeaderContainer>
             <AboutMe>
                 <h1>About Me</h1>
-                <p>Hi there! I’m Augusto Accorsi, but my friends call me Guto. Having worked in software development for almost 10 years,
-                I have tried quite a few areas before discovering the developer I want to be is a frontend engineer or a full-stack developer.
-                Everything started with HTML and CSS of course, that software coding was a brave new world for me. After that, I found myself with ABAP, trying to navigate in the sea of enterprise software.
-                Nonetheless, I realized that my real passion was frontend development, which means dealing with JavaScript and, later, Node.js. Since then, I have acquired rich experience in developing user interfaces from scratch, starting from responsive layouts to performance understanding.
+                <p>
+                    I’m a Senior Software Engineer with over 10 years of
+                    experience designing and delivering modern, scalable web
+                    applications that delight users and solve real business
+                    problems. My expertise spans React, TypeScript, JavaScript,
+                    and SAPUI5, with a strong focus on building
+                    high-performance, accessible, and maintainable front-end
+                    architectures.
+                    <p />
+                    Throughout my career, I’ve led the development of
+                    enterprise-level applications used by thousands of users,
+                    optimized performance, and collaborated closely with product
+                    teams to create intuitive user experiences. I thrive on
+                    ownership, continuous learning, and transforming complex
+                    requirements into elegant solutions.
+                    <p />
+                    Currently, I’m passionate about creating solutions that
+                    scale, integrating best practices in performance and
+                    accessibility, and mentoring teams to raise the bar in UI
+                    development. Key skills: React, TypeScript, JavaScript
+                    (ES6+), SAPUI5, OData, UI5 Testing (OPA5, QUnit, Jest),
+                    GitHub Actions, Agile/Scrum.
                 </p>
             </AboutMe>
 
             <Experience>
                 <WorkExperience>
-                <h1>Work Experience</h1>
-                {
-                    jobs.experience.map((work, key) => {
-                        return <WorkExperienceItem key={key} work={work} />
-                    })
-                }
-            </WorkExperience>
-            <WorkExperience>
-                <EducationTitle>Education</EducationTitle>
-                {
-                    school.education.map((education, key) => {
-                        return <Education key={key} education={education} />
-                    })
-                }
+                    <h1>Work Experience</h1>
+                    {jobs.experience.map((work, key) => {
+                        return <WorkExperienceItem key={key} work={work} />;
+                    })}
+                </WorkExperience>
+                <WorkExperience>
+                    <EducationTitle>Education</EducationTitle>
+                    {school.education.map((education, key) => {
+                        return <Education key={key} education={education} />;
+                    })}
 
-                <AchievementTitle>Achievements</AchievementTitle>
-                {
-                    achievements.map((achievement, key) => {
-                        return <Achievement key={key} achievement={achievement} />
-                    })
-                }
-
-            </WorkExperience>
+                    <AchievementTitle>Achievements</AchievementTitle>
+                    {achievements.map((achievement, key) => {
+                        return (
+                            <Achievement key={key} achievement={achievement} />
+                        );
+                    })}
+                </WorkExperience>
             </Experience>
         </HeaderContainer>
     );
