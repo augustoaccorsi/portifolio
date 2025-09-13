@@ -38,9 +38,11 @@ const About = () => {
                     Currently, I’m passionate about creating solutions that
                     scale, integrating best practices in performance and
                     accessibility, and mentoring teams to raise the bar in UI
-                    development. Key skills: React, TypeScript, JavaScript
-                    (ES6+), SAPUI5, OData, UI5 Testing (OPA5, QUnit, Jest),
-                    GitHub Actions, Agile/Scrum.
+                    development.
+                    <p />
+                    Key skills: React, TypeScript, JavaScript (ES6+), SAPUI5,
+                    OData, UI5 Testing (OPA5, QUnit, Jest), GitHub Actions,
+                    Agile/Scrum.
                 </p>
             </AboutMe>
 
