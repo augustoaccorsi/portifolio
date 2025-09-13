@@ -40,6 +40,8 @@ export const Body = styled.div`
             gap: 0.3rem;
         }
 
+        display: flex;
+        flex-wrap: wrap;
         p {
             flex-wrap: wrap;
             margin: 0;

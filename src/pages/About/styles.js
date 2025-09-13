@@ -88,3 +88,18 @@ export const EducationTitle = styled.h1`
     -webkit-text-fill-color: transparent;
     background-clip: text;
 `;
+
+export const AchievementTitle = styled.h1`
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: ${(props) => props.theme['yellow']};
+    background: linear-gradient(
+        135deg,
+        ${(props) => props.theme['yellow']},
+        #b8860b
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+`;

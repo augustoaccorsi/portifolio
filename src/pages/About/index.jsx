@@ -1,9 +1,11 @@
-import { AboutMe, HeaderContainer, WorkExperience, Experience, EducationTitle } from './styles';
+import { AboutMe, HeaderContainer, WorkExperience, Experience, EducationTitle, AchievementTitle } from './styles';
 import WorkExperienceItem from '../../components/WorkExperience/index';
-import Education from '../../components/Education/index'
+import Education from '../../components/Education/index';
+import Achievement from '../../components/Achievement/index';
 
 import jobs from '../../data/workExperience.json'
 import school from '../../data/education.json'
+import achievements from '../../data/achievements.json'
 
 const About = () => {
     return (
@@ -33,6 +35,14 @@ const About = () => {
                         return <Education key={key} education={education} />
                     })
                 }
+
+                <AchievementTitle>Achievements</AchievementTitle>
+                {
+                    achievements.map((achievement, key) => {
+                        return <Achievement key={key} achievement={achievement} />
+                    })
+                }
+
             </WorkExperience>
             </Experience>
         </HeaderContainer>
