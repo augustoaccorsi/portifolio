@@ -92,7 +92,7 @@ const Contact = () => {
                     <ContactInfo>
                         <ContactTitle>Location</ContactTitle>
                         <ContactText>Rio Grande do Sul, Brazil</ContactText>
-                        <ContactButton as="div">
+                        <ContactButton href="mailto:augusto.acorsi@gmail.com?subject=Remote Work">
                             Available for Remote Work
                         </ContactButton>
                     </ContactInfo>
