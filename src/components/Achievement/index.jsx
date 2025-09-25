@@ -1,8 +1,16 @@
-import { AchievementContainer, Header, Body, Divider } from './styles';
+import { AchievementContainer, Header, Body, Divider, DownloadFile } from './styles';
 import { FaBuilding, FaCalendarAlt, FaFileDownload } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 
 const Achievement = ({ achievement }) => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/portifolio/Hybrelastic.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <AchievementContainer>
             <Header>
@@ -22,12 +30,12 @@ const Achievement = ({ achievement }) => {
                         <p>
                             {achievement.year}
                         </p> */}
-                    <div>
+                    <DownloadFile onClick={handleDownload}>
                         <FaFileDownload />
                         <p>
                             download periodic here
                         </p>
-                    </div>
+                    </DownloadFile>
                 </div>
             </Body>
             <Divider />

@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    position: relative;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    position: fixed;
+    top: 1rem;
+    left: 10%;
+    right: 10%;
+    z-index: 1000;
     background: ${(p) => p.theme['base-card']};
     border-radius: 12px;
     padding: 1rem 1rem;
