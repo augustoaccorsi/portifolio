@@ -144,7 +144,7 @@ export const SocialSection = styled.div`
 export const SocialTitle = styled.h2`
     font-size: 2rem;
     margin-bottom: 2rem;
-    background: ${(props) => props.theme['yellow']};
+    background: ${(props) => props.theme['purple']};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -161,7 +161,7 @@ export const SocialLink = styled.a`
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: ${(props) => props.theme['yellow']};
+    background: ${(props) => props.theme['purple']};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,7 +177,7 @@ export const SocialLink = styled.a`
         left: 0;
         right: 0;
         bottom: 0;
-        background: ${(props) => props.theme['yellow']};
+        background: ${(props) => props.theme['purple']};
         opacity: 0;
         transition: opacity 0.3s ease;
     }
@@ -190,6 +190,6 @@ export const SocialLink = styled.a`
     }
 
     &:hover {
-        background: ${(props) => props.theme['yellow-bit-dark'] || props.theme['yellow-dark']};
+        background: ${(props) => props.theme['purple-dark']};
     }
 `;

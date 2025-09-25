@@ -49,17 +49,17 @@ export const WorkExperience = styled.div`
     border-radius: 12px;
     padding: 2rem;
     flex: 1;
-    border-left: 4px solid ${(props) => props.theme['yellow']};
+    border-left: 4px solid ${(props) => props.theme['purple']};
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 
     h1 {
         margin-bottom: 1rem;
         font-size: 3rem;
-        color: ${(props) => props.theme['yellow']};
+        color: ${(props) => props.theme['purple']};
         background: linear-gradient(
             135deg,
-            ${(props) => props.theme['yellow']}
+            ${(props) => props.theme['purple']}
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
