@@ -66,7 +66,7 @@ export const ContactCard = styled.div`
         height: 4px;
         background: linear-gradient(
             135deg,
-            ${(props) => props.theme['yellow-dark']},
+            ${(props) => props.theme['yellow']},
             ${(props) => props.theme['purple-dark']}
         );
     }
@@ -190,6 +190,6 @@ export const SocialLink = styled.a`
     }
 
     &:hover {
-        background: ${(props) => props.theme['yellow-dark']};
+        background: ${(props) => props.theme['yellow-bit-dark'] || props.theme['yellow-dark']};
     }
 `;

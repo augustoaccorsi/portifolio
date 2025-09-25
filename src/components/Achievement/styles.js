@@ -79,7 +79,7 @@ export const DownloadFile = styled.div`
     }
     
     p {
-        color: ${(props) => props.theme['primary'] || '#007bff'};
+        color: ${(props) => props.theme['purple'] || '#007bff'};
         font-weight: 500;
     }
 `;

@@ -59,8 +59,7 @@ export const WorkExperience = styled.div`
         color: ${(props) => props.theme['yellow']};
         background: linear-gradient(
             135deg,
-            ${(props) => props.theme['yellow']},
-            #b8860b
+            ${(props) => props.theme['yellow']}
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

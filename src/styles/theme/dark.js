@@ -1,10 +1,12 @@
 export const darkTheme = {
-    yellow: '#DBAC2C',
+    yellow: '#433e90',
+    'yellow-bit-dark': '#342f76ff',
     'yellow-light': '#F1E9C9',
     'yellow-dark': '#856c08ff',
-    purple: '#8047F8',
+
+    purple: '#326ada',
     'purple-light': '#EBE5F9',
-    'purple-dark': '#4B2995',
+    'purple-dark': '#2553adff',
 
     //base - dark theme colors
     'base-title': '#E1E1E6',
@@ -14,8 +16,8 @@ export const darkTheme = {
     'base-hover': '#323238',
     'base-button': '#29292E',
     'base-input': '#202024',
-    'base-card': '#121214',
-    background: '#09090A',
+    'base-card': '	#192734',
+    background: '#15202b',
 
     'background-hover': '#29292e7b',
     white: '#FFFFFF',

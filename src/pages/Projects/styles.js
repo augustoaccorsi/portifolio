@@ -10,14 +10,14 @@ export const About = styled.div`
     padding: 2rem;
     margin-bottom: 3rem;
     text-align: center;
-    border-left: 4px solid ${(props) => props.theme['yellow']};
+    border-left: 4px solid ${(props) => props.theme['purple']};
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 
     h1 {
         margin-bottom: 1rem;
         font-size: 3rem;
-        background: ${(props) => props.theme['yellow']};
+        background: ${(props) => props.theme['purple']};
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
