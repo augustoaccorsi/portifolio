@@ -1,25 +1,14 @@
-import { HomeContainer, UserInfo, UserImage } from './styles';
+import { HomeContainer, UserInfo } from './styles';
 
 const Home = () => {
     return (
         <HomeContainer>
             <UserInfo>
-                <div>
-                    <p>Hi,</p>
-                </div>
-                <div>
-                    <p>My name is</p>
-                </div>
-                <div>
-                    <p>Augusto Accorsi</p>
-                </div>
-                <div>
-                    <p>And this is my portifolio</p>
-                </div>
+                <p>Hi,</p>
+                <p>My name is</p>
+                <p>Augusto Accorsi</p>
+                <p>And this is my portifolio</p>
             </UserInfo>
-            <UserImage>
-                <img src="me.jpg"/>
-            </UserImage>
         </HomeContainer>
     );
 };
