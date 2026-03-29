@@ -1,30 +1,31 @@
 export const darkTheme = {
-    yellow: '#433e90',
-    'yellow-bit-dark': '#342f76ff',
-    'yellow-light': '#F1E9C9',
-    'yellow-dark': '#856c08ff',
+    // Accent — electric blue (primary)
+    purple: '#82aaff',
+    'purple-light': '#c5d8ff',
+    'purple-dark': '#5b86e5',
 
-    purple: '#326ada',
-    'purple-light': '#EBE5F9',
-    'purple-dark': '#2553adff',
+    // Accent — lime green (secondary / terminal feel)
+    yellow: '#c3e88d',
+    'yellow-light': '#e8f5d0',
+    'yellow-dark': '#9ecb6a',
+    'yellow-bit-dark': '#8ab85c',
 
-    //base - dark theme colors
-    'base-title': '#E1E1E6',
-    'base-subtitle': '#C4C4CC',
-    'base-text': '#8D8D99',
-    'base-label': '#7C7C8A',
-    'base-hover': '#323238',
-    'base-button': '#29292E',
-    'base-input': '#202024',
-    'base-card': '	#192734',
-    background: '#15202b',
+    // Base — Material Ocean palette
+    'base-title': '#eeffff',
+    'base-subtitle': '#cdd3de',
+    'base-text': '#a6accd',
+    'base-label': '#676e95',
+    'base-hover': '#2d3054',
+    'base-button': '#252844',
+    'base-input': '#1e2137',
+    'base-card': '#1a1c2e',
+    background: '#0f111a',
 
-    'background-hover': '#29292e7b',
-    white: '#FFFFFF',
-    'button-hover': '#4A9EFF',
+    'background-hover': '#1e2137aa',
+    white: '#eeffff',
+    'button-hover': '#82aaff',
 
-    //using
-    gray: '#8D8D99',
-    text: '#E1E1E6',
-    logo: '#E1E1E6',
+    gray: '#676e95',
+    text: '#eeffff',
+    logo: '#eeffff',
 };

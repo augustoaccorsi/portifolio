@@ -1,27 +1,29 @@
 export const defaultTheme = {
-    yellow: '#DBAC2C',
-    'yellow-light': '#F1E9C9',
-    'yellow-dark': '#856c08ff',
-    purple: '#8047F8',
-    'purple-light': '#EBE5F9',
-    'purple-dark': '#4B2995',
+    // Accent — vibrant indigo (primary)
+    purple: '#4263eb',
+    'purple-light': '#dde3ff',
+    'purple-dark': '#2f4acb',
 
-    //base
-    'base-title': '#272221',
-    'base-subtitle': '#403937',
-    'base-text': '#574F4D',
-    'base-label': '#8D8686',
-    'base-hover': '#D7D5D5',
-    'base-button': '#E6E5E5',
-    'base-input': '#EDEDED',
-    'base-card': '#F3F2F2',
-    background: '#FFFFFF',
+    // Accent — forest green (secondary)
+    yellow: '#2f9e44',
+    'yellow-light': '#d3f9d8',
+    'yellow-dark': '#2b8a3e',
 
-    'background-hover': '#e2d5d57b',
-    white: '#FFFFFF',
-    'button-hover': '#0366d6',
+    // Base — light blue-tinted slate
+    'base-title': '#1a1f3c',
+    'base-subtitle': '#2e3460',
+    'base-text': '#3d4574',
+    'base-label': '#7c82a8',
+    'base-hover': '#d8ddf0',
+    'base-button': '#ebeef8',
+    'base-input': '#f0f2fa',
+    'base-card': '#f8f9ff',
+    background: '#ffffff',
 
-    //using
-    gray: '#666666',
-    text: '#42446E',
+    'background-hover': '#e8ebf877',
+    white: '#ffffff',
+    'button-hover': '#2f4acb',
+
+    gray: '#7c82a8',
+    text: '#1a1f3c',
 };

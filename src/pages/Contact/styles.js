@@ -1,195 +1,175 @@
 import styled from 'styled-components';
 
 export const PageContainer = styled.div`
-    padding: 2rem 0;
-    min-height: 80vh;
+    padding: 3rem 0 5rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 `;
 
 export const HeaderSection = styled.div`
-    text-align: center;
+    position: relative;
     background: ${(props) => props.theme['base-card']};
-    border-radius: 16px;
-    padding: 3rem 2rem;
-    border-left: 4px solid ${(props) => props.theme['purple']};
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    border-radius: 4px;
+    padding: 2.5rem;
+    border-left: 3px solid ${(props) => props.theme['purple']};
+    text-align: center;
+
+    &::before {
+        content: '// contact.md';
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-family: 'Courier New', monospace;
+        font-size: 0.75rem;
+        color: ${(props) => props.theme['base-label']};
+        letter-spacing: 0.05em;
+    }
 
     h1 {
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
-        background: ${(props) => props.theme['purple']};
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        font-family: 'Courier New', monospace;
+        font-size: 2rem;
         font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: ${(props) => props.theme['purple']};
     }
 
     p {
-        font-size: 1.3rem;
-        color: ${(props) => props.theme['base-text']};
-        line-height: 1.6;
-        max-width: 600px;
-        margin: 0 auto;
+        font-size: 1rem;
+        color: ${(props) => props.theme['base-label']};
+        letter-spacing: 0.03em;
     }
 `;
 
 export const ContactGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
 `;
 
 export const ContactCard = styled.div`
     background: ${(props) => props.theme['base-card']};
-    border-radius: 16px;
-    padding: 2rem;
+    border-radius: 4px;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    position: relative;
-    overflow: hidden;
+    align-items: flex-start;
+    gap: 1rem;
+    border: 1px solid ${(props) => props.theme['base-hover']};
+    transition: border-color 0.2s ease, transform 0.2s ease;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(
-            135deg,
-            ${(props) => props.theme['yellow']},
-            ${(props) => props.theme['purple-dark']}
-        );
+    &:hover {
+        border-color: ${(props) => props.theme['purple']};
+        transform: translateY(-3px);
     }
 `;
 
 export const ContactIcon = styled.div`
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: ${(props) => props.theme['base-text']};
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background: ${(props) => props.theme['base-input']};
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
 
     svg {
-        font-size: 2rem;
-        color: white;
+        font-size: 1.25rem;
+        color: ${(props) => props.theme['purple']};
     }
 `;
 
 export const ContactInfo = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 0.4rem;
+    width: 100%;
 `;
 
 export const ContactTitle = styled.h3`
-    font-size: 1.5rem;
-    font-weight: 600;
-    background: ${(props) => props.theme['base-text']};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: ${(props) => props.theme['base-label']};
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     margin: 0;
 `;
 
 export const ContactText = styled.p`
+    font-size: 0.95rem;
     color: ${(props) => props.theme['base-text']};
-    font-size: 1rem;
-    line-height: 1.5;
     margin: 0;
+    line-height: 1.4;
 `;
 
 export const ContactButton = styled.a`
-    background: ${(props) => props.theme['purple']};
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
     display: inline-block;
     margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid ${(props) => props.theme['purple']};
+    color: ${(props) => props.theme['purple']};
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
 
     &:hover {
-        background: ${(props) => props.theme['purple-dark']};
+        background: ${(props) => props.theme['purple']};
+        color: #fff;
     }
 `;
 
 export const SocialSection = styled.div`
-    text-align: center;
     background: ${(props) => props.theme['base-card']};
-    border-radius: 16px;
-    padding: 2.5rem;
-    border-left: 4px solid ${(props) => props.theme['yellow']};
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    border-radius: 4px;
+    padding: 2rem;
+    border-top: 2px solid ${(props) => props.theme['yellow']};
+    text-align: center;
 `;
 
 export const SocialTitle = styled.h2`
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    background: ${(props) => props.theme['purple']};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 600;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: ${(props) => props.theme['yellow']};
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 `;
 
 export const SocialLinks = styled.div`
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.25rem;
 `;
 
 export const SocialLink = styled.a`
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: ${(props) => props.theme['purple']};
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background: ${(props) => props.theme['base-input']};
+    border: 1px solid ${(props) => props.theme['base-hover']};
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: ${(props) => props.theme['purple']};
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
+    transition: border-color 0.2s ease, background 0.2s ease;
 
     svg {
-        font-size: 1.5rem;
-        color: white;
-        position: relative;
-        z-index: 1;
+        font-size: 1.3rem;
+        color: ${(props) => props.theme['base-text']};
+        transition: color 0.2s ease;
     }
 
     &:hover {
-        background: ${(props) => props.theme['purple-dark']};
+        border-color: ${(props) => props.theme['purple']};
+        background: ${(props) => props.theme['base-card']};
+
+        svg {
+            color: ${(props) => props.theme['purple']};
+        }
     }
 `;

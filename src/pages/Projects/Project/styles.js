@@ -2,32 +2,26 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background: ${(props) => props.theme['base-card']};
-    border: 2px solid transparent;
-    border-radius: 16px;
-    height: 25rem;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
+    border: 1px solid ${(props) => props.theme['base-hover']};
+    transition: border-color 0.2s ease, transform 0.2s ease;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, ${(props) => props.theme['yellow']}, ${(props) => props.theme['purple']});
+    &:hover {
+        border-color: ${(props) => props.theme['purple']};
+        transform: translateY(-3px);
     }
 `;
 
 export const ImageBox = styled.div`
-    flex: 1; /* take available vertical space */
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: ${(props) => props.theme['base-input']};
+    border-bottom: 1px solid ${(props) => props.theme['base-hover']};
 
     img {
         max-width: 100%;
@@ -37,63 +31,59 @@ export const ImageBox = styled.div`
 `;
 
 export const Info = styled.div`
-    margin: 0 1rem 1rem 1rem;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    padding: 1.25rem 1.25rem 0.5rem;
+    flex: 1;
 
     h2 {
-        margin-bottom: 1rem;
-        background: ${(props) => props.theme['purple']};
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-weight: 600;
+        font-family: 'Courier New', monospace;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: ${(props) => props.theme['purple']};
     }
 
     p {
-        max-width: 20rem;
+        font-size: 0.875rem;
+        color: ${(props) => props.theme['base-text']};
+        line-height: 1.6;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
-        color: ${(props) => props.theme['base-text']};
-        line-height: 1.5;
     }
 `;
 
 export const Stack = styled.div`
-    display: flex;
-    margin: 0 1rem 1rem 1rem;
+    padding: 0 1.25rem 0.75rem;
+
+    span {
+        font-family: 'Courier New', monospace;
+        font-size: 0.75rem;
+        color: ${(props) => props.theme['yellow']};
+        background: ${(props) => props.theme['base-input']};
+        padding: 0.2rem 0.6rem;
+        border-radius: 2px;
+    }
 `;
 
 export const Footer = styled.div`
-    margin: 0 1rem 1rem 1rem;
+    padding: 0.75rem 1.25rem;
+    border-top: 1px solid ${(props) => props.theme['base-hover']};
     display: flex;
-
-    div {
-        margin-left: auto;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-
-        a {
-            margin-left: 0.5rem;
-        }
-    }
+    justify-content: flex-end;
 `;
 
 export const Link = styled.a`
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     text-decoration: none;
-    color: ${(props) => props.theme['base-text']};
-    transition: all 0.3s ease;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: ${(props) => props.theme['base-label']};
+    transition: color 0.2s ease;
 
     &:hover {
-        cursor: pointer;
         color: ${(props) => props.theme['purple']};
     }
 `;

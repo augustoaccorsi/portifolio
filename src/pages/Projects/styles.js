@@ -1,38 +1,46 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-    padding: 2rem 0;
+    padding: 3rem 0 5rem;
 `;
 
 export const About = styled.div`
+    position: relative;
     background: ${(props) => props.theme['base-card']};
-    border-radius: 12px;
-    padding: 2rem;
+    border-radius: 4px;
+    padding: 2.5rem;
     margin-bottom: 3rem;
+    border-left: 3px solid ${(props) => props.theme['purple']};
     text-align: center;
-    border-left: 4px solid ${(props) => props.theme['purple']};
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+
+    &::before {
+        content: '// projects.json';
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-family: 'Courier New', monospace;
+        font-size: 0.75rem;
+        color: ${(props) => props.theme['base-label']};
+        letter-spacing: 0.05em;
+    }
 
     h1 {
-        margin-bottom: 1rem;
-        font-size: 3rem;
-        background: ${(props) => props.theme['purple']};
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        font-family: 'Courier New', monospace;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: ${(props) => props.theme['purple']};
     }
 
     p {
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-        color: ${(props) => props.theme['base-text']};
-        line-height: 1.6;
+        font-size: 1rem;
+        color: ${(props) => props.theme['base-label']};
+        letter-spacing: 0.03em;
     }
 `;
 
 export const ProjectsContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
 `;

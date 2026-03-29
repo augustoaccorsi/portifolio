@@ -10,20 +10,30 @@ import {
     HamburgerButton,
     MobileMenu,
 } from './styles';
-import { FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaBars, FaTimes, FaHome } from 'react-icons/fa';
 import { Outlet, useLocation, NavLink } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
 import ThemeToggle from '../ThemeToggle';
 import { PortifolioContext } from '../../context/PortifolioContext';
+
+const NAV_LINKS = [
+    { to: '/', label: 'home' },
+    { to: '/about', label: 'about' },
+    { to: '/techStack', label: 'stack' },
+    { to: '/projects', label: 'projects' },
+    { to: '/contact', label: 'contact' },
+];
 
 const Header = () => {
     const location = useLocation();
     const { isDarkTheme, toggleTheme } = useContext(PortifolioContext);
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const isActiveRoute = (path) => location.pathname === path;
+    const isActive = (path) =>
+        path === '/'
+            ? location.pathname === '/'
+            : location.pathname.startsWith(path);
 
-    // Close mobile menu when route changes
     useEffect(() => {
         setMenuOpen(false);
     }, [location.pathname]);
@@ -34,89 +44,31 @@ const Header = () => {
                 <HeaderInner>
                     <NavLink to="/">
                         <Logo>
-                            <img
-                                src={
-                                    isDarkTheme
-                                        ? 'rex-logo-dark.svg'
-                                        : 'rex-logo-light.svg'
-                                }
-                                alt="Portfolio Logo"
-                                width="50"
-                                height="50"
-                            />
+                            <FaHome />
                         </Logo>
                     </NavLink>
 
                     <RightGroup>
-                        {/* Desktop nav (hidden on mobile via CSS) */}
                         <NavButtons>
-                            <NavLink to="/">
-                                {isActiveRoute('/') ? (
-                                    <SelectedLink>Home</SelectedLink>
-                                ) : (
-                                    <Link>Home</Link>
-                                )}
-                            </NavLink>
-
-                            <NavLink to="/about">
-                                {isActiveRoute('/about') ? (
-                                    <SelectedLink>About</SelectedLink>
-                                ) : (
-                                    <Link>About</Link>
-                                )}
-                            </NavLink>
-
-                            <NavLink to="/techStack">
-                                {isActiveRoute('/techStack') ? (
-                                    <SelectedLink>Tech Stack</SelectedLink>
-                                ) : (
-                                    <Link>Tech Stack</Link>
-                                )}
-                            </NavLink>
-
-                            <NavLink to="/projects">
-                                {isActiveRoute('/projects') ? (
-                                    <SelectedLink>Projects</SelectedLink>
-                                ) : (
-                                    <Link>Projects</Link>
-                                )}
-                            </NavLink>
-
-                            <NavLink to="/contact">
-                                {isActiveRoute('/contact') ? (
-                                    <SelectedLink>Contact</SelectedLink>
-                                ) : (
-                                    <Link>Contact</Link>
-                                )}
-                            </NavLink>
-
-                            {/* external links should be anchor tags */}
-                            <a
-                                href="https://github.com/augustoaccorsi"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Icon>
-                                    <FaGithub />
-                                </Icon>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/augusto-accorsi/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Icon>
-                                    <FaLinkedin />
-                                </Icon>
-                            </a>
-
-                            <ThemeToggle
-                                isDark={isDarkTheme}
-                                onToggle={toggleTheme}
-                            />
+                            {NAV_LINKS.map(({ to, label }) => (
+                                <NavLink key={to} to={to}>
+                                    {isActive(to)
+                                        ? <SelectedLink>~/{label}</SelectedLink>
+                                        : <Link>~/{label}</Link>
+                                    }
+                                </NavLink>
+                            ))}
                         </NavButtons>
 
-                        {/* Hamburger (visible on small screens) */}
+                        <a href="https://github.com/augustoaccorsi" target="_blank" rel="noopener noreferrer">
+                            <Icon><FaGithub /></Icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/augusto-accorsi/" target="_blank" rel="noopener noreferrer">
+                            <Icon><FaLinkedin /></Icon>
+                        </a>
+
+                        <ThemeToggle isDark={isDarkTheme} onToggle={toggleTheme} />
+
                         <HamburgerButton
                             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
                             aria-expanded={menuOpen}
@@ -129,82 +81,15 @@ const Header = () => {
                     </RightGroup>
                 </HeaderInner>
 
-                {/* Mobile menu (animated via CSS). We use data-open attribute to control visibility */}
-                <MobileMenu
-                    id="mobile-menu"
-                    data-open={menuOpen ? 'true' : 'false'}
-                >
-                    <NavLink
-                        to="/"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        {isActiveRoute('/') ? (
-                            <SelectedLink>Home</SelectedLink>
-                        ) : (
-                            <Link>Home</Link>
-                        )}
-                    </NavLink>
-                    <NavLink
-                        to="/about"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        {isActiveRoute('/about') ? (
-                            <SelectedLink>About</SelectedLink>
-                        ) : (
-                            <Link>About</Link>
-                        )}
-                    </NavLink>
-                    <NavLink
-                        to="/techStack"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        {isActiveRoute('/techStack') ? (
-                            <SelectedLink>Tech Stack</SelectedLink>
-                        ) : (
-                            <Link>Tech Stack</Link>
-                        )}
-                    </NavLink>
-                    <NavLink
-                        to="/projects"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        {isActiveRoute('/projects') ? (
-                            <SelectedLink>Projects</SelectedLink>
-                        ) : (
-                            <Link>Projects</Link>
-                        )}
-                    </NavLink>
-                    <NavLink
-                        to="/contact"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        {isActiveRoute('/contact') ? (
-                            <SelectedLink>Contact</SelectedLink>
-                        ) : (
-                            <Link>Contact</Link>
-                        )}
-                    </NavLink>
-
-                    <a
-                        href="https://github.com/augustoaccorsi"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Icon>
-                            <FaGithub />
-                        </Icon>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/augusto-accorsi/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Icon>
-                            <FaLinkedin />
-                        </Icon>
-                    </a>
-
-                    <ThemeToggle isDark={isDarkTheme} onToggle={toggleTheme} />
+                <MobileMenu id="mobile-menu" data-open={menuOpen ? 'true' : 'false'}>
+                    {NAV_LINKS.map(({ to, label }) => (
+                        <NavLink key={to} to={to} onClick={() => setMenuOpen(false)}>
+                            {isActive(to)
+                                ? <SelectedLink>~/{label}</SelectedLink>
+                                : <Link>~/{label}</Link>
+                            }
+                        </NavLink>
+                    ))}
                 </MobileMenu>
             </HeaderContainer>
 

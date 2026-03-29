@@ -1,80 +1,88 @@
 import styled from 'styled-components';
 
 export const WorkExperienceContainer = styled.div`
-    /* margin-right: 35%; */
-    /* margin-right: 3rem; */
+    margin-bottom: 1.5rem;
 `;
 
 export const Header = styled.div`
-    /* background: ${(props) => props.theme['base-card']}; */
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
 
     span {
-        margin-bottom: 1rem;
-        /* font-size: 3rem; */
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: ${(props) => props.theme['base-text']};
     }
 
     p {
-        margin-bottom: 1rem;
-        font-size: 0.7rem;
+        font-family: 'Courier New', monospace;
+        font-size: 0.75rem;
+        color: ${(props) => props.theme['base-label']};
+        white-space: nowrap;
     }
 `;
 
 export const Body = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 
     ul {
-        list-style: none;   // remove dots
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem 1.5rem;
     }
-    display: flex;
-    flex-wrap: wrap;
 
     li {
-        margin-bottom: 0.3rem;
-        font-size: 0.8rem;
+        font-size: 0.82rem;
+        color: ${(props) => props.theme['base-text']};
+        line-height: 1.6;
+        padding-left: 1rem;
+        position: relative;
+
+        &::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: ${(props) => props.theme['purple']};
+        }
     }
 `;
 
 export const Footer = styled.div`
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
 
     div {
         display: flex;
-        justify-content: space-between;
-        gap: 0.3rem;
-        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.4rem;
 
         > div {
-            // div inside a div (icon + text)
-            display: flex;
+            display: inline-flex;
+            align-items: center;
             gap: 0.3rem;
-            margin-right: 3rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.72rem;
+            color: ${(props) => props.theme['yellow']};
+            background: ${(props) => props.theme['base-input']};
+            padding: 0.2rem 0.5rem;
+            border-radius: 2px;
         }
-
-
-    display: flex;
-    flex-wrap: wrap;
 
         p {
             margin: 0;
-            font-size: 0.7rem;
-            
+            font-size: 0.72rem;
         }
     }
 `;
 
 export const Divider = styled.hr`
     border: none;
-    border-bottom: 1px solid ${(props) => props.theme['base-label']};
-    margin: 1rem 0;
+    border-bottom: 1px solid ${(props) => props.theme['base-hover']};
+    margin: 1.25rem 0;
 `;

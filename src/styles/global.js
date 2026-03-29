@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
         margin-left: 10%;
         margin-right: 10%;
-        padding-top: 6rem; /* Add space for fixed header */
+        padding-top: 56px; /* height of fixed header */
     }
 
     body, input, textarea, button {
