@@ -17,11 +17,11 @@ import ThemeToggle from '../ThemeToggle';
 import { PortifolioContext } from '../../context/PortifolioContext';
 
 const NAV_LINKS = [
-    { to: '/', label: 'home' },
-    { to: '/about', label: 'about' },
-    { to: '/techStack', label: 'stack' },
-    { to: '/projects', label: 'projects' },
-    { to: '/contact', label: 'contact' },
+    { to: '/portifolio/', label: 'home' },
+    { to: '/portifolio/about', label: 'about' },
+    { to: '/portifolio/techStack', label: 'stack' },
+    { to: '/portifolio/projects', label: 'projects' },
+    { to: '/portifolio/contact', label: 'contact' },
 ];
 
 const Header = () => {
@@ -30,8 +30,8 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const isActive = (path) =>
-        path === '/'
-            ? location.pathname === '/'
+        path === '/portifolio/'
+            ? location.pathname === '/portifolio/'
             : location.pathname.startsWith(path);
 
     useEffect(() => {
@@ -42,7 +42,7 @@ const Header = () => {
         <>
             <HeaderContainer>
                 <HeaderInner>
-                    <NavLink to="/">
+                    <NavLink to="/portifolio/">
                         <Logo>
                             <FaHome />
                         </Logo>
