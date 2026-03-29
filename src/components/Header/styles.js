@@ -29,6 +29,10 @@ export const RightGroup = styled.div`
 export const NavButtons = styled.nav`
     display: none;
 
+    a {
+        text-decoration: none;
+    }
+
     @media (min-width: 769px) {
         display: flex;
         align-items: center;
