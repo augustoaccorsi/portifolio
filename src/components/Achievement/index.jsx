@@ -5,7 +5,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 const Achievement = ({ achievement }) => {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/portifolio/Hybrelastic.pdf';
+        link.href = '/Hybrelastic.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

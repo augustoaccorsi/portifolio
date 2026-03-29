@@ -32,7 +32,7 @@ const Header = () => {
         <>
             <HeaderContainer>
                 <HeaderInner>
-                    <NavLink to="/portifolio/">
+                    <NavLink to="/">
                         <Logo>
                             <img
                                 src={
@@ -50,40 +50,40 @@ const Header = () => {
                     <RightGroup>
                         {/* Desktop nav (hidden on mobile via CSS) */}
                         <NavButtons>
-                            <NavLink to="/portifolio/">
-                                {isActiveRoute('/portifolio/') ? (
+                            <NavLink to="/">
+                                {isActiveRoute('/') ? (
                                     <SelectedLink>Home</SelectedLink>
                                 ) : (
                                     <Link>Home</Link>
                                 )}
                             </NavLink>
 
-                            <NavLink to="/portifolio/about">
-                                {isActiveRoute('/portifolio/about') ? (
+                            <NavLink to="/about">
+                                {isActiveRoute('/about') ? (
                                     <SelectedLink>About</SelectedLink>
                                 ) : (
                                     <Link>About</Link>
                                 )}
                             </NavLink>
 
-                            <NavLink to="/portifolio/techStack">
-                                {isActiveRoute('/portifolio/techStack') ? (
+                            <NavLink to="/techStack">
+                                {isActiveRoute('/techStack') ? (
                                     <SelectedLink>Tech Stack</SelectedLink>
                                 ) : (
                                     <Link>Tech Stack</Link>
                                 )}
                             </NavLink>
 
-                            <NavLink to="/portifolio/projects">
-                                {isActiveRoute('/portifolio/projects') ? (
+                            <NavLink to="/projects">
+                                {isActiveRoute('/projects') ? (
                                     <SelectedLink>Projects</SelectedLink>
                                 ) : (
                                     <Link>Projects</Link>
                                 )}
                             </NavLink>
 
-                            <NavLink to="/portifolio/contact">
-                                {isActiveRoute('/portifolio/contact') ? (
+                            <NavLink to="/contact">
+                                {isActiveRoute('/contact') ? (
                                     <SelectedLink>Contact</SelectedLink>
                                 ) : (
                                     <Link>Contact</Link>
@@ -135,50 +135,50 @@ const Header = () => {
                     data-open={menuOpen ? 'true' : 'false'}
                 >
                     <NavLink
-                        to="/portifolio/"
+                        to="/"
                         onClick={() => setMenuOpen(false)}
                     >
-                        {isActiveRoute('/portifolio/') ? (
+                        {isActiveRoute('/') ? (
                             <SelectedLink>Home</SelectedLink>
                         ) : (
                             <Link>Home</Link>
                         )}
                     </NavLink>
                     <NavLink
-                        to="/portifolio/about"
+                        to="/about"
                         onClick={() => setMenuOpen(false)}
                     >
-                        {isActiveRoute('/portifolio/about') ? (
+                        {isActiveRoute('/about') ? (
                             <SelectedLink>About</SelectedLink>
                         ) : (
                             <Link>About</Link>
                         )}
                     </NavLink>
                     <NavLink
-                        to="/portifolio/techStack"
+                        to="/techStack"
                         onClick={() => setMenuOpen(false)}
                     >
-                        {isActiveRoute('/portifolio/techStack') ? (
+                        {isActiveRoute('/techStack') ? (
                             <SelectedLink>Tech Stack</SelectedLink>
                         ) : (
                             <Link>Tech Stack</Link>
                         )}
                     </NavLink>
                     <NavLink
-                        to="/portifolio/projects"
+                        to="/projects"
                         onClick={() => setMenuOpen(false)}
                     >
-                        {isActiveRoute('/portifolio/projects') ? (
+                        {isActiveRoute('/projects') ? (
                             <SelectedLink>Projects</SelectedLink>
                         ) : (
                             <Link>Projects</Link>
                         )}
                     </NavLink>
                     <NavLink
-                        to="/portifolio/contact"
+                        to="/contact"
                         onClick={() => setMenuOpen(false)}
                     >
-                        {isActiveRoute('/portifolio/contact') ? (
+                        {isActiveRoute('/contact') ? (
                             <SelectedLink>Contact</SelectedLink>
                         ) : (
                             <Link>Contact</Link>
