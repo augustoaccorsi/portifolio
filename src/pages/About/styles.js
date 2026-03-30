@@ -40,7 +40,6 @@ export const AboutMe = styled.div`
         font-size: 1rem;
         line-height: 1.8;
         color: ${(props) => props.theme['base-text']};
-        max-width: 80ch;
     }
 `;
 
