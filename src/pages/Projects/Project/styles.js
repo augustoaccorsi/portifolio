@@ -71,6 +71,11 @@ export const Footer = styled.div`
     border-top: 1px solid ${(props) => props.theme['base-hover']};
     display: flex;
     justify-content: flex-end;
+
+    div {
+        display: flex;
+        gap: 1rem;
+    }
 `;
 
 export const Link = styled.a`

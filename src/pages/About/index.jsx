@@ -21,25 +21,46 @@ const About = () => {
                 <h1>About Me</h1>
                 <p>
                     I’m a Senior Software Engineer with over 10 years of
-                    experience designing and delivering modern, scalable web
-                    applications that delight users and solve real business
-                    problems. My expertise spans React, TypeScript, JavaScript,
-                    and SAPUI5, with a strong focus on building
-                    high-performance, accessible, and maintainable front-end
-                    architectures.
-                    <p />
+                    experience designing and delivering scalable,
+                    high-performance web applications at enterprise scale, with
+                    a strong focus on front-end architecture and user
+                    experience.
+                </p>
+                <p>
+                    My expertise spans React, TypeScript, JavaScript, and
+                    SAPUI5. I specialize in building maintainable, accessible,
+                    and performance-driven applications that support complex
+                    business workflows, particularly within enterprise
+                    environments.
+                </p>
+                <p>
                     Throughout my career, I’ve led the development of
-                    enterprise-level applications used by thousands of users,
-                    optimized performance, and collaborated closely with product
-                    teams to create intuitive user experiences. I thrive on
-                    ownership, continuous learning, and transforming complex
-                    requirements into elegant solutions.
-                    <p />
-                    Currently, I’m passionate about creating solutions that
-                    scale, integrating best practices in performance and
-                    accessibility, and mentoring teams to raise the bar in UI
-                    development.
-                    <p />
+                    applications used by thousands of users, improving
+                    performance, simplifying complex processes, and delivering
+                    solutions aligned with business goals. I work closely with
+                    product and design teams to translate complex requirements
+                    into clean, intuitive interfaces.
+                </p>
+                <p>
+                    I take strong ownership of what I build, from architecture
+                    decisions to final delivery, and I’m always looking for
+                    ways to improve code quality, performance, and team
+                    practices. I also enjoy mentoring other developers and
+                    contributing to a culture of continuous improvement.
+                </p>
+                <p>
+                    I’ve also been incorporating AI into my workflow to enhance
+                    development efficiency—accelerating implementation,
+                    improving test coverage, and supporting better technical
+                    decisions. I focus on applying it pragmatically to deliver
+                    better outcomes without adding unnecessary complexity.
+                </p>
+                <p>
+                    I’m currently focused on building scalable UI
+                    architectures, leveraging modern tooling, and continuously
+                    improving how software is designed and delivered.
+                </p>
+                <p>
                     Key skills: React, TypeScript, JavaScript (ES6+), SAPUI5,
                     OData, UI5 Testing (OPA5, QUnit, Jest), GitHub Actions,
                     Agile/Scrum.
