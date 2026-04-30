@@ -7,14 +7,15 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html, body {
+        height: 100%;
+        overflow: hidden;
+    }
+
     body {
         background: ${(props) => props.theme['background']};
         color: ${(props) => props.theme['base-text']};
         -webkit-font-smoothing: antialiased;
-
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-top: 56px; /* height of fixed header */
     }
 
     body, input, textarea, button {
