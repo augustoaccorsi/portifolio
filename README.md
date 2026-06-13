@@ -4,7 +4,7 @@
 ![Vite](https://img.shields.io/badge/Vite-5.4.0-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/Styled_Components-6.1.19-DB7093?style=flat-square&logo=styled-components&logoColor=white)
 
-**Live**: [augustoaccorsi.github.io/portifolio](https://augustoaccorsi.github.io/portifolio)
+**Live**: [augustoaccorsi.vercel.app](https://augustoaccorsi.vercel.app)
 
 ## Stack
 
