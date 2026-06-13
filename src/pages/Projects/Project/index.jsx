@@ -1,7 +1,7 @@
-import { Container, ImageBox, Info, Stack, Footer, Link } from './styles';
+import { Container, ImageBox, Info, Stack, Footer, Link, Stats, StatItem } from './styles';
 
 import ImageGenerator from '../../../utils/ImageGenerator';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaStar, FaCodeBranch } from 'react-icons/fa';
 
 const Project = (props) => {
     const project = props.project;
@@ -10,7 +10,7 @@ const Project = (props) => {
     return (
         <Container>
             <ImageBox>
-                <img src={svgString} />
+                <img src={svgString} alt={project.name} />
             </ImageBox>
             <Info>
                 <h2>{project.name}</h2>
@@ -22,11 +22,21 @@ const Project = (props) => {
             </Info>
             <Stack>
                 <span>
-                    <strong>Tech Stach:</strong> {project.language}
+                    <strong>Tech Stack:</strong> {project.language}
                 </span>
             </Stack>
 
             <Footer>
+                <Stats>
+                    <StatItem title="Stars">
+                        <FaStar />
+                        {project.stargazers_count}
+                    </StatItem>
+                    <StatItem title="Forks">
+                        <FaCodeBranch />
+                        {project.forks_count}
+                    </StatItem>
+                </Stats>
                 <div>
                     <Link
                         target="_blank"

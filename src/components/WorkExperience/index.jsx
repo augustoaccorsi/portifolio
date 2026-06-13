@@ -18,8 +18,8 @@ const WorkExperienceItem = ({ work }) => {
 
             <Body>
                 <ul>
-                    {work.responsibilities.map((responsability, key) => (
-                        <li key={key}>{responsability}</li>
+                    {work.responsibilities.map((responsibility) => (
+                        <li key={responsibility}>{responsibility}</li>
                     ))}
                 </ul>
             </Body>

@@ -10,16 +10,16 @@ import { ScrollContext } from '../../context/ScrollContext';
 import { Container, Section } from './styles';
 
 const PAGES = [
-    { to: '/portifolio/', Component: Home },
-    { to: '/portifolio/about', Component: About },
-    { to: '/portifolio/techStack', Component: TechStack },
-    { to: '/portifolio/projects', Component: Projects },
-    { to: '/portifolio/contact', Component: Contact },
+    { to: '/', Component: Home },
+    { to: '/about', Component: About },
+    { to: '/techStack', Component: TechStack },
+    { to: '/projects', Component: Projects },
+    { to: '/contact', Component: Contact },
 ];
 
 const isActivePage = (path, pathname) =>
-    path === '/portifolio/'
-        ? pathname === '/portifolio/'
+    path === '/'
+        ? pathname === '/'
         : pathname.startsWith(path);
 
 const ScrollLayout = () => {
@@ -50,18 +50,19 @@ const ScrollLayout = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    // Scroll handler: update URL based on which section's top is at/above viewport
+    // Scroll handler: update URL and progress bar
     useEffect(() => {
         const container = containerRef.current;
         if (!container) return;
 
         let rafId = null;
         const handleScroll = () => {
-            if (!observing.current) return;
             if (rafId) return;
             rafId = requestAnimationFrame(() => {
                 rafId = null;
                 const scrollTop = container.scrollTop;
+
+                if (!observing.current) return;
                 let currentIndex = 0;
                 sectionRefs.current.forEach((section, i) => {
                     if (section && section.offsetTop <= scrollTop + 100) {

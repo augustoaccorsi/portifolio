@@ -18,11 +18,11 @@ import { PortifolioContext } from '../../context/PortifolioContext';
 import { useScrollContext } from '../../context/ScrollContext';
 
 const NAV_LINKS = [
-    { to: '/portifolio/', label: 'home' },
-    { to: '/portifolio/about', label: 'about' },
-    { to: '/portifolio/techStack', label: 'stack' },
-    { to: '/portifolio/projects', label: 'projects' },
-    { to: '/portifolio/contact', label: 'contact' },
+    { to: '/', label: 'home' },
+    { to: '/about', label: 'about' },
+    { to: '/techStack', label: 'stack' },
+    { to: '/projects', label: 'projects' },
+    { to: '/contact', label: 'contact' },
 ];
 
 const Header = () => {
@@ -32,8 +32,8 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const isActive = (path) =>
-        path === '/portifolio/'
-            ? location.pathname === '/portifolio/'
+        path === '/'
+            ? location.pathname === '/'
             : location.pathname.startsWith(path);
 
     useEffect(() => {
@@ -49,7 +49,7 @@ const Header = () => {
     return (
         <HeaderContainer>
             <HeaderInner>
-                <NavLink to="/portifolio/" onClick={(e) => handleNavClick(e, 0)}>
+                <NavLink to="/" onClick={(e) => handleNavClick(e, 0)}>
                     <Logo>
                         <FaHome />
                     </Logo>

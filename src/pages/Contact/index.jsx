@@ -8,16 +8,11 @@ import {
     ContactTitle,
     ContactText,
     ContactButton,
-    SocialSection,
-    SocialTitle,
-    SocialLinks,
-    SocialLink,
 } from './styles';
 import {
     FaGithub,
     FaLinkedin,
     FaEnvelope,
-    FaPhone,
     FaMapMarkerAlt,
 } from 'react-icons/fa';
 
@@ -98,33 +93,6 @@ const Contact = () => {
                     </ContactInfo>
                 </ContactCard>
             </ContactGrid>
-
-            <SocialSection>
-                <SocialTitle>Let's Connect</SocialTitle>
-                <SocialLinks>
-                    <SocialLink
-                        href="mailto:augusto.acorsi@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaEnvelope />
-                    </SocialLink>
-                    <SocialLink
-                        href="https://www.linkedin.com/in/augusto-accorsi/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaLinkedin />
-                    </SocialLink>
-                    <SocialLink
-                        href="https://github.com/augustoaccorsi"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaGithub />
-                    </SocialLink>
-                </SocialLinks>
-            </SocialSection>
         </PageContainer>
     );
 };

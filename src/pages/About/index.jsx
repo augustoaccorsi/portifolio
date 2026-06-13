@@ -70,20 +70,20 @@ const About = () => {
             <Experience>
                 <WorkExperience>
                     <h1>Work Experience</h1>
-                    {jobs.experience.map((work, key) => {
-                        return <WorkExperienceItem key={key} work={work} />;
+                    {jobs.experience.map((work) => {
+                        return <WorkExperienceItem key={`${work.company}-${work.start_date}`} work={work} />;
                     })}
                 </WorkExperience>
                 <WorkExperience>
                     <EducationTitle>Education</EducationTitle>
-                    {school.education.map((education, key) => {
-                        return <Education key={key} education={education} />;
+                    {school.education.map((education) => {
+                        return <Education key={education.institution} education={education} />;
                     })}
 
                     <AchievementTitle>Achievements</AchievementTitle>
-                    {achievements.map((achievement, key) => {
+                    {achievements.map((achievement) => {
                         return (
-                            <Achievement key={key} achievement={achievement} />
+                            <Achievement key={achievement.name} achievement={achievement} />
                         );
                     })}
                 </WorkExperience>

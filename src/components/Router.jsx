@@ -5,7 +5,7 @@ import ScrollLayout from './ScrollLayout/index';
 const Router = () => {
     return (
         <Routes>
-            <Route path="/portifolio/*" element={<ScrollLayout />} />
+            <Route path="/*" element={<ScrollLayout />} />
         </Routes>
     );
 };

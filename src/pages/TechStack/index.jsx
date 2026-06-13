@@ -17,8 +17,8 @@ const TechStack = () => {
             </About>
 
             <TechContainer>
-                {data.tech_stack.map((tech, key) => {
-                    return <Tech key={key} tech={tech} />
+                {data.tech_stack.map((tech) => {
+                    return <Tech key={tech.name} tech={tech} />
                 })}
             </TechContainer>
         </HeaderContainer>

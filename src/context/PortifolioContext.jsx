@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState, useMemo } from 'react';
+import React, { createContext, useCallback, useEffect, useState, useMemo } from 'react';
 import { API } from '../lib/axios';
 import { defaultTheme } from '../styles/theme/default';
 import { darkTheme } from '../styles/theme/dark';
@@ -21,7 +21,7 @@ const PortifolioContextProvider = (props) => {
         return savedTheme === 'dark';
     });
 
-    const fetchProjects = async () => {
+    const fetchProjects = useCallback(async () => {
         try {
             setLoading(true);
             setError(null);
@@ -33,7 +33,7 @@ const PortifolioContextProvider = (props) => {
         } finally {
             setLoading(false);
         }
-    };
+    }, []);
 
     useEffect(() => {
         fetchProjects();

@@ -74,15 +74,13 @@ export const SelectedLink = styled.span`
     font-family: 'Courier New', monospace;
     font-size: 0.82rem;
     font-weight: 700;
-    color: ${(p) => p.theme['base-text']};
+    color: ${(p) => p.theme['purple']};
     padding: 0.35rem 0.75rem;
     border-radius: 3px;
     background: ${(p) => p.theme['base-input']};
     white-space: nowrap;
-
-    &:hover {
-        cursor: default;
-    }
+    border-bottom: 2px solid ${(p) => p.theme['purple']};
+    cursor: pointer;
 `;
 
 export const Icon = styled.div`

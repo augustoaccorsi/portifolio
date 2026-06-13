@@ -70,11 +70,30 @@ export const Footer = styled.div`
     padding: 0.75rem 1.25rem;
     border-top: 1px solid ${(props) => props.theme['base-hover']};
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 
     div {
         display: flex;
         gap: 1rem;
+    }
+`;
+
+export const Stats = styled.div`
+    display: flex;
+    gap: 0.75rem;
+`;
+
+export const StatItem = styled.span`
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: ${(props) => props.theme['base-label']};
+
+    svg {
+        font-size: 0.7rem;
     }
 `;
 
