@@ -2,10 +2,24 @@
   "experience": [
     {
       "company": "SAP Labs Latin America",
+      "title": "Technical Lead",
+      "start_date": "June 2026",
+      "end_date": "Present",
+      "duration": "1 month",
+      "location": "São Leopoldo/RS - Brazil",
+      "contract": "Full Time",
+      "responsibilities": [
+        "Leading technical direction and architecture decisions across the team, ensuring quality, scalability, and alignment with business goals.",
+        "Mentoring and guiding the development team, conducting code reviews, and driving engineering best practices.",
+        "Bridging product, design, and engineering to align technical execution with business goals."
+      ]
+    },
+    {
+      "company": "SAP Labs Latin America",
       "title": "Senior Software Developer",
       "start_date": "January 2025",
       "end_date": "Present",
-      "duration": "9 months",
+      "duration": "1 year 6 months",
       "location": "São Leopoldo/RS - Brazil",
       "contract": "Full Time",
       "responsibilities": [

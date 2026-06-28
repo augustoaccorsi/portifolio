@@ -20,11 +20,11 @@ const About = () => {
             <AboutMe>
                 <h1>About Me</h1>
                 <p>
-                    I’m a Senior Software Engineer with over 10 years of
-                    experience designing and delivering scalable,
+                    I’m a Technical Lead and Senior Software Engineer with over
+                    10 years of experience designing and delivering scalable,
                     high-performance web applications at enterprise scale, with
-                    a strong focus on front-end architecture and user
-                    experience.
+                    a strong focus on front-end architecture, engineering
+                    leadership, and user experience.
                 </p>
                 <p>
                     My expertise spans React, TypeScript, JavaScript, and
@@ -42,11 +42,11 @@ const About = () => {
                     into clean, intuitive interfaces.
                 </p>
                 <p>
-                    I take strong ownership of what I build, from architecture
-                    decisions to final delivery, and I’m always looking for
-                    ways to improve code quality, performance, and team
-                    practices. I also enjoy mentoring other developers and
-                    contributing to a culture of continuous improvement.
+                    I take strong ownership of what I build, from leading
+                    technical direction and architecture decisions across the
+                    team to mentoring developers and final delivery. I drive
+                    engineering practices, code quality standards, and
+                    continuous improvement across the team.
                 </p>
                 <p>
                     I’ve also been incorporating AI into my workflow to enhance
