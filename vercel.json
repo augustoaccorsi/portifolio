@@ -1,12 +1,12 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "framework": "nextjs",
   "headers": [
     {
       "source": "/resume.pdf",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
     },
     {
-      "source": "/assets/(.*)",
+      "source": "/_next/static/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     }
   ]
