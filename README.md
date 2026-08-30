@@ -1,48 +1,39 @@
 # Augusto Accorsi — Portfolio
 
-![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=flat-square&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.4.0-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Styled Components](https://img.shields.io/badge/Styled_Components-6.1.19-DB7093?style=flat-square&logo=styled-components&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
 **Live**: [augustoaccorsi.vercel.app](https://augustoaccorsi.vercel.app)
 
 ## Stack
 
-- **React 19** + **React Router DOM** — SPA with client-side routing
-- **Styled Components** — CSS-in-JS with light/dark theme support
-- **Vite** — build tooling
-- **React Icons** — icon library
+- **Next.js 14** — App Router, SSR/SSG
+- **TypeScript 5** — end-to-end type safety
+- **Tailwind CSS 3** — utility-first styling with light/dark theme support
+- **Framer Motion** — animations and transitions
+- **Lucide React** + **React Icons** — icon libraries
 - **Axios** — GitHub API integration for projects
 
 ## Features
 
-- Terminal/code editor aesthetic with monospace typography
-- Dark and light themes (Material Ocean / Indigo Slate)
-- Mobile swipe navigation between pages
-- Responsive layout with hamburger menu
+- Light and dark themes
+- Animated section transitions
+- Work experience timeline with interactive cards
 - GitHub projects fetched live from the API
+- Resume download
+- Fully responsive layout
 
 ## Project Structure
 
 ```
 src/
+├── app/                 # Next.js App Router pages and layout
 ├── components/
-│   ├── Header/          # Fixed nav bar with swipe + scroll navigation
-│   ├── ThemeToggle/     # Dark/light switcher
-│   ├── WorkExperience/  # Work experience card
-│   ├── Education/       # Education card
-│   └── Achievement/     # Achievements card
-├── pages/
-│   ├── Home/            # Hero / landing
-│   ├── About/           # Bio, work experience, education
-│   ├── TechStack/       # Tech icons grid
-│   ├── Projects/        # GitHub repos
-│   └── Contact/         # Contact links
-├── context/             # Theme + GitHub data context
-├── data/                # JSON — work experience, education, achievements, tech stack
-├── styles/
-│   └── theme/           # default.js (light) and dark.js (dark) theme tokens
-└── utils/               # Image generator, constants
+│   ├── sections/        # Hero, About, WorkExperience, Projects, Contact, etc.
+│   └── ui/              # Shared UI primitives
+├── data/                # JSON — work experience, education, tech stack
+└── styles/              # Global CSS and Tailwind config
 ```
 
 ## Getting Started
@@ -54,7 +45,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173/portifolio/`
+Open `http://localhost:3000`
 
 ## Scripts
 
@@ -62,13 +53,12 @@ Open `http://localhost:5173/portifolio/`
 |---|---|
 | `npm run dev` | Start dev server |
 | `npm run build` | Production build |
-| `npm run preview` | Preview production build |
+| `npm start` | Start production server |
 | `npm run lint` | Run ESLint |
-| `npm run deploy` | Deploy to GitHub Pages |
 
 ## Deployment
 
-Pushes to `main` automatically deploy to GitHub Pages via GitHub Actions. Manual deploy: `npm run deploy`.
+Deployed on [Vercel](https://vercel.com). Pushes to `main` deploy automatically.
 
 ## Contact
 
