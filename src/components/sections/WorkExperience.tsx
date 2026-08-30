@@ -86,8 +86,9 @@ export default function WorkExperienceSection() {
               {selected.company}
             </p>
             <p className="text-[var(--muted)] text-xs mb-5">
-              {selected.start_date} — {selected.end_date} · {selected.duration} ·{" "}
-              {selected.location}
+              {selected.start_date} – {selected.end_date}
+              {selected.duration && ` · ${selected.duration}`}
+              {selected.location && ` · ${selected.location}`}
             </p>
             <ul className="space-y-3">
               {selected.responsibilities.map((r, i) => (

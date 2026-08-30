@@ -20,9 +20,8 @@ export default function Hero() {
             <span className="text-[var(--accent)]">Senior Software Engineer</span>
           </h2>
           <p className="text-[var(--muted)] text-lg mb-10 leading-relaxed max-w-2xl">
-            Over 10 years building scalable, high-performance web applications
-            at enterprise scale. Specializing in React, TypeScript, and SAPUI5
-            at SAP Labs Latin America.
+            Over 10 years of experience designing and building scalable, enterprise-grade software.
+            A full-stack engineer with expertise across modern web technologies, SAP solutions, and cloud platforms, working with React, TypeScript, SAPUI5, Java, and Node.js. I enjoy solving complex problems and building reliable, high-impact products.
           </p>
           <a
             href="/resume.pdf"
